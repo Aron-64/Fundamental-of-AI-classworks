@@ -1,7 +1,7 @@
 # 忽略所有名字后缀带有 .txt 的文件
-*.txt
+qwen_api.txt
 
-# 但不忽略根目录下的 notes.txt 文件
-!/prompt.txt
-!poem_prompt.txt
-!poem.txt
+# # 但不忽略根目录下的 .txt 文件
+# !/prompt.txt
+# !poem_prompt.txt
+# !poem.txt
