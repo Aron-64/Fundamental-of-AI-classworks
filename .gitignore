@@ -3,3 +3,5 @@
 
 # 但不忽略根目录下的 notes.txt 文件
 !/prompt.txt
+!poem_prompt.txt
+!poem.txt
