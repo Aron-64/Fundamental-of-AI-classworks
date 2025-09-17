@@ -1,6 +1,9 @@
 import os
 from openai import OpenAI
 
+# 设置工作目录为脚本所在目录
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
 try:
     # 读取 prompt.txt 文件内容
     with open("prompt.txt", "r", encoding="utf-8") as f:
@@ -18,7 +21,15 @@ try:
             {'role': 'user', 'content': prompt}
         ]
     )
-    print(completion.choices[0].message.content)
+    poem = completion.choices[0].message.content
+    print(poem)
+
+    # 新增：保存诗句到 results/poem.txt
+    results_dir = "results"
+    os.makedirs(results_dir, exist_ok=True)
+    with open(os.path.join(results_dir, "poem.txt"), "w", encoding="utf-8") as f:
+        f.write(poem)
+
 except Exception as e:
     print(f"错误信息：{e}")
     print("请参考文档：https://help.aliyun.com/zh/model-studio/developer-reference/error-code")
