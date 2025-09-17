@@ -33,18 +33,15 @@
 ├── First_work/ # 第一次作业
     ├── code/ # 代码文件夹
     ├── prompt/ # 提示词文件夹
-    ├── notes/ # 学习笔记文件夹
-    ├── README.md # 作业说明文件
+    ├── API/ # API 密钥等配置文件夹
 ├── Second_work/ # 第二次作业
     ├── code/
     ├── prompt/
-    ├── notes/
-    ├── README.md
+    ├── API/
 ├── ...
 ├── XXXth_work/ # 第XXX次作业
     ├── code/
     ├── prompt/
-    ├── notes/
-    ├── README.md
+    ├── API/
 ├── .gitignore   # Git 忽略文件配置   
 └── README.md   # 项目说明文件
