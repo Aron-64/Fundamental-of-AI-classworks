@@ -4,5 +4,3 @@ qwen_api.txt
 # 不再忽略 Second_work/experiments（已启用跟踪）
 # Second_work/experiments
 
-#忽略second_work文件夹下lib的所有内容
-Second_work/lib
