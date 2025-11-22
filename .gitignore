@@ -8,3 +8,6 @@ Second_work/experiments/*
 # !/prompt.txt
 # !poem_prompt.txt
 # !poem.txt
+
+#忽略second_work文件夹下lib的所有内容
+Second_work/lib/*
