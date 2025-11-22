@@ -1,0 +1,36 @@
+🤖 欢迎来到由刘航程构建的<带有LLM救援的Frozen Lake游戏>!
+规则如下:
+- 到达状态<15>即获胜.
+- 不小心掉入洞穴？只要正确回答问题就能拯救你的目标状态<15>！
+- 回答正确: 洞穴消失，目标状态复原.
+- 回答错误: 目标状态<15>也变成了一个洞穴!
+==================================================
+State 0 → LLM chose: RIGHT
+🕳️ Uh-oh! You fell into a hole at state 1!
+❓ What is the sum of the first five positive even numbers?
+🧠 LLM is solving the rescue question...
+✅ Correct! The goal (15) is restored.
+Back to state 0.
+State 0 → LLM chose: RIGHT
+State 1 → LLM chose: RIGHT
+State 2 → LLM chose: RIGHT
+State 6 → LLM chose: RIGHT
+State 2 → LLM chose: RIGHT
+State 6 → LLM chose: RIGHT
+State 2 → LLM chose: RIGHT
+State 6 → LLM chose: RIGHT
+State 2 → LLM chose: RIGHT
+State 3 → LLM chose: DOWN
+State 2 → LLM chose: RIGHT
+State 6 → LLM chose: RIGHT
+State 10 → LLM chose: RIGHT
+🕳️ Uh-oh! You fell into a hole at state 11!
+❓ What is the sum of the first five positive even numbers?
+🧠 LLM is solving the rescue question...
+✅ Correct! The goal (15) is restored.
+Back to state 10.
+State 10 → LLM chose: RIGHT
+State 14 → LLM chose: RIGHT
+State 10 → LLM chose: RIGHT
+Game Over! Final reward: 0
+✅ Trajectory GIF saved to C:\Users\liuha\Desktop\AI_works\Second_work\results\trajectory.gif

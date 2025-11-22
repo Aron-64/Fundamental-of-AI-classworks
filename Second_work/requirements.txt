@@ -1,3 +1,6 @@
-openai>=1.0.0
-dashscope>=1.14.0
-requests>=2.31.0
+gymnasium>=0.28.1,<1.0
+numpy>=1.22.0,<2.0
+requests>=2.28.0
+matplotlib>=3.5.0
+imageio>=2.28.0
+Pillow>=9.4.0
