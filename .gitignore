@@ -2,7 +2,7 @@
 qwen_api.txt
 
 # 忽略Second_work文件夹下experiments的所有内容
-Second_work/experiments/
+Second_work/experiments
 
 # # 但不忽略根目录下的 .txt 文件
 # !/prompt.txt
@@ -10,4 +10,4 @@ Second_work/experiments/
 # !poem.txt
 
 #忽略second_work文件夹下lib的所有内容
-Second_work/lib/
+Second_work/lib
