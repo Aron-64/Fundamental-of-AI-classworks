@@ -1,13 +1,8 @@
 # 忽略所有名字后缀带有 .txt 的文件
 qwen_api.txt
 
-# 忽略Second_work文件夹下experiments的所有内容
-Second_work/experiments
-
-# # 但不忽略根目录下的 .txt 文件
-# !/prompt.txt
-# !poem_prompt.txt
-# !poem.txt
+# 不再忽略 Second_work/experiments（已启用跟踪）
+# Second_work/experiments
 
 #忽略second_work文件夹下lib的所有内容
 Second_work/lib
