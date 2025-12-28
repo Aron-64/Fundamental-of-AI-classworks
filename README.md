@@ -1,9 +1,10 @@
 # AI_works 汇总说明（First_work + Second_work）
 
 项目概览
-- 本仓库包含两份作业/实验工程：
+- 本仓库包含三份作业/实验工程：
   - First_work：轻量 Qwen 调用与示例（诗歌生成 demo）。
   - Second_work：基于 Gymnasium FrozenLake 的 LLM 驱动实验（MathRescue + 轨迹可视化）。
+  - Project_work：中国旅行规划项目（基于LLM的旅行代理和环境模拟）。
 
 目录结构（重要子目录）
 - First_work/
@@ -19,6 +20,20 @@
   - src/                      # 建议的模块化实现（api/, envs/, agent/, viz/）
     - main.py                   # 运行入口（使用 src 模块化代码）
   - results/                  # FrozenLake 轨迹 GIF 输出等
+- Project_work/
+  - ChinaTravel/              # 主要项目文件夹
+    - requirements.txt        # 项目依赖
+    - run_exp.py              # 实验运行脚本
+    - eval_exp.py             # 评估脚本
+    - chinatravel/            # 核心模块
+      - agent/                # 代理相关代码（包括LLM代理、验证器等）
+      - data/                 # 数据加载模块
+      - environment/          # 环境模拟（世界环境、数据库、工具）
+      - evaluation/           # 评估工具（约束检查、偏好评估等）
+    - cache/                  # 缓存文件（LLM响应等）
+    - results/                # 实验结果输出
+    - logs/                   # 日志文件
+    - TPC@AIC2025/            # 相关竞赛或数据集
 
 快速开始（Windows）
 1. 安装依赖（Second_work 为示例）：
@@ -32,10 +47,12 @@
    - Second_work FrozenLake 演示：
      python Second_work\experiments\frozenlake_LLM.py
    或使用模块化入口：
-     python Second_work\src\main.py
-4. 输出文件：
+     python Second_work\src\main.py   - Project_work 中国旅行实验：
+     cd Project_work\ChinaTravel
+     python run_exp.py  # 运行实验（需先安装依赖）4. 输出文件：
    - First_work/results/poem.txt
    - Second_work/results/trajectory.gif（轨迹动画）
+   - Project_work/results/（实验结果和日志文件）
 
 注意事项
 - API 调用可能产生成本：开发/调试时建议 mock 或用极低频率请求。
